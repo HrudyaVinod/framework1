@@ -1,0 +1,51 @@
+<suite name="mytestsuite">
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportUtility" />
+	</listeners>
+	<test name="chrometest">
+		<parameter name="browser" value="chrome">
+		</parameter>
+		<groups>
+			<run>
+				<exclude name="critical">
+				</exclude>
+			</run>
+
+		</groups>
+		<classes>
+			<class name="testCases.TimeSheetTestCases">
+			</class>
+		</classes>
+	</test>
+	<test name="edgetest">
+		<parameter name="browser" value="edge">
+		</parameter>
+		<groups>
+			<run>
+				<exclude name="critical">
+				</exclude>
+			</run>
+
+		</groups>
+		<classes>
+			<class name="testCases.TimeSheetTestCases">
+			</class>
+		</classes>
+	</test>
+	<test name="firefoxtest">
+		<parameter name="browser" value="firefox">
+		</parameter>
+		<groups>
+			<run>
+				<exclude name="critical">
+				</exclude>
+			</run>
+
+		</groups>
+		<classes>
+			<class name="testCases.TimeSheetTestCases">
+			</class>
+		</classes>
+	</test>
+</suite>
