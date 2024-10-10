@@ -23,6 +23,8 @@ public class ClientsTestCases extends BaseClass {
 		cp.clickOnRequiredPOCheckBox();
 		Boolean actualcheckBox = cp.selectCheckbox();
 		Boolean expectedcheckBox = true;
+		
+		System.out.println();
 		Assert.assertEquals(actualcheckBox, expectedcheckBox, Constant.errorMessageCheckBox);// static is there so using
 																								// classname we need to
 																								// call,for static
